@@ -31,7 +31,7 @@ def solve(maze):
     for i in range(len(maze)):
         for j in range(len(maze[i])):
             if maze[i][j] == 2:
-                start = (i, j)
+                start = (i, j) # this is called a tuple - because of the brackets
                 break
         # we found start so stop looking
         if start:
@@ -42,7 +42,7 @@ def solve(maze):
     for i in range(len(maze)):
         for j in range(len(maze[i])):
             if maze[i][j] == 3:
-                end = (i, j)
+                end = (i, j) # this is called a tuple - because of the brackets
                 break
         # we found end so stop looking
         if end:
@@ -81,7 +81,7 @@ def solve(maze):
 
 
 
-    if check(*start):
+    if check(*start): # unpacking the tuple *start
         return path
     else:
         return None
