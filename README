@@ -1,2 +1,5 @@
 This is a maze solving algorithm 
 It uses a recursive function to solve a 10x10 maze 
+
+You will get a list of coordinates returned, which is the path through the maze.
+Ideal for guiding a robot
