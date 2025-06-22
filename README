@@ -1,5 +1,10 @@
 This is a maze solving algorithm 
 It uses a recursive function to solve a 10x10 maze 
+created for code club as part of teaching robots.
+The challenge is for robot to automatically navigate the maze
+
+The robot will be a microbit robot kit
+
 
 You will get a list of coordinates returned, which is the path through the maze.
 Ideal for guiding a robot
