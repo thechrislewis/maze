@@ -1,7 +1,7 @@
 # solve1.py
 # define the maze as an array
 # 2 is the start
-# 3is the end
+# 3 is the end
 # 1 is a path
 # 0 is blocked
 
@@ -48,6 +48,10 @@ def solve(maze):
         if end:
             break
 
+    if not start or not end:
+        return None
+    
+    # initialize the path
     path = []
 
     #set visited to false
