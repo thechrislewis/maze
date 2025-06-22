@@ -54,7 +54,7 @@ def solve(maze):
     # initialize the path
     path = []
 
-    #set visited to false
+    #create and set visited to false
     visited = [[False]*cols for _ in range(rows)]
 
     def check(r, c):
@@ -71,9 +71,11 @@ def solve(maze):
         if (r, c) == end:
             return True
 
+        # Check all four directions recursively
         if (check(r+1, c) or check(r-1, c) or check(r, c+1) or check(r, c-1)):
             return True
 
+        # If none of the directions lead to a solution, backtrack
         path.pop()
         return False
 
